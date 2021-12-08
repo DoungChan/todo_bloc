@@ -5,8 +5,11 @@ class AddSrceen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("Add_Screen"),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Add screen"),
+      ),
+      body: const Center(child: Text("Add_Screen")),
     );
   }
 }

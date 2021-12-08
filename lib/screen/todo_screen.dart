@@ -9,7 +9,7 @@ class TodoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Todo Screen"),
+        title: const Text("Todo Screen"),
         actions: [
           InkWell(
             onTap: () => Navigator.pushNamed(context, ADD_TODO),
