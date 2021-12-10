@@ -1,10 +1,10 @@
 class Model {
-  String? todoMessage;
-  String? isCompleted;
-  int? id;
+  String todoMessage;
+  bool isCompleted;
+  int id;
 
   Model.fromJson(Map json)
       : todoMessage = json["todo"],
-        isCompleted = json["isCompleted"],
+        isCompleted = json["isCompleted"] == "true",
         id = json["id"] as int;
 }
